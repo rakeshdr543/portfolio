@@ -1,9 +1,11 @@
 import React from 'react';
 import LeaveImage from '../images/pexels-aditya-aiyar-1407305.jpg';
+import Meta from './Meta'
 
 const Home = () => {
     return (
         <main>
+        <Meta />
         <img
           src={LeaveImage}
           alt="Monstera Leaves"

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import plumeria from "../images/web.jpg";
 import imageUrlBuilder from "@sanity/image-url";
+import Meta from './Meta'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -28,6 +29,7 @@ export default function About() {
 
   return (
     <main className="relative">
+    <Meta />
       <img
         src={plumeria}
         alt="plumeria background"
@@ -43,9 +45,9 @@ export default function About() {
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-green-300 mb-4">
               Hey there. I'm{" "}
-              <span className="text-green-100">{author.name}</span>
+              <span className="text-green-100">{author.name} </span>
             </h1>
-            <p className="text-green-200 text-lg">{author.bio}</p>
+            <p className="text-green-200 text-lg"> A Full Stack Developer who specialises in JavaScript Technologies across the whole stack (Node.js, Express, React ). Developed complete web applications with backend API Systems.</p>
           </div>
         </section>
       </div>
